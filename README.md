@@ -2,7 +2,7 @@
 
 A beautiful load more with js 📰
 
-- ✨ [Demo Project](https://reza-developer01.github.io/jobpilot/)
+- ✨ [Demo Project](https://reza-developer01.github.io/Loadmore/)
 
 - 👨‍💻 Developed by Reza Rashvand
 
