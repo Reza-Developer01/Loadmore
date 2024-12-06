@@ -1,0 +1,292 @@
+/* ==== Resets ==== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+button {
+    font: inherit;
+    border: 0;
+    outline: none;
+}
+
+/* ==== Font Family ==== */
+@font-face {
+    font-family: "IranYekanX-Regular";
+    src: url("../fonts/IRANYekanX-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "IranYekanX-Medium";
+    src: url("../fonts/IRANYekanX-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "IranYekanX-Bold";
+    src: url("../fonts/IRANYekanX-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "IranYekanX-Heavy";
+    src: url("../fonts/IRANYekanX-Heavy.ttf") format("truetype");
+}
+
+/* ==== App Css ==== */
+body {
+    font-family: "IranYekanX-Regular";
+    line-height: 1.5;
+    padding: 85px 0;
+}
+
+.icon-pack {
+    display: none;
+}
+
+/* ==== Start ==== */
+.loadmore {
+    width: 1008px;
+    margin: 0 auto;
+}
+
+.loadmore__header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.loadmore__title {
+    font-family: "IranYekanX-Heavy";
+    font-size: 30px;
+    color: #1D2939;
+    margin-bottom: 4px;
+}
+
+.content {
+    background-color: #F5F5F5;
+    padding: 24px 8px 38px 24px;
+    border-radius: 16px;
+    position: relative;
+}
+
+.content--open .content__text {
+    height: 500px;
+    overflow: scroll;
+}
+
+.content--open .content__shadow {
+    display: none;
+}
+
+.content--open .content__btn {
+    background-color: #fff;
+    color: #EB5E28;
+    border: 1px solid #EB5E28;
+    font-family: "IranYekanX-Medium";
+}
+
+.content--open .content__close-icon {
+    display: block;
+}
+
+.content--open .content__open-icon {
+    display: none;
+}
+
+.content__text {
+    color: #1D2939;
+    height: 288px;
+    overflow: hidden;
+    direction: ltr;
+    text-align: right;
+    padding-right: 8px;
+}
+
+.content__shadow {
+    background: linear-gradient(0deg, #F5F5F5 0%, rgba(245, 245, 245, 0.54) 71.07%, rgba(245, 245, 245, 0) 100%);
+    height: 158px;
+    width: 100%;
+    position: absolute;
+    bottom: 38px;
+    right: 0;
+    left: 0;
+}
+
+.content__btn {
+    width: 302px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: #EB5E28;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -24px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.content__open-icon,
+.content__close-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.content__close-icon {
+    display: none;
+}
+
+/* width */
+.content__text::-webkit-scrollbar {
+    width: 8px;
+    direction: rtl;
+}
+
+/* Track */
+.content__text::-webkit-scrollbar-track {
+    background: transparent;
+    direction: rtl;
+}
+
+/* Handle */
+.content__text::-webkit-scrollbar-thumb {
+    background: #D9D9D9;
+    border-radius: 50px;
+    direction: rtl;
+}
+
+/* ==== Finish ==== */
